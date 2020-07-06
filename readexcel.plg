@@ -1,0 +1,85 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: readexcel - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/readexcel.res" /d "_DEBUG" "E:\各类学科文件\软件项目实训\软件项目实训资料\模拟银行存储系统完成版\ReadExcel\readexcel.rc"" 
+Creating temporary file "C:\Users\阳明\AppData\Local\Temp\RSPBB44.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/readexcel.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\各类学科文件\软件项目实训\软件项目实训资料\模拟银行存储系统完成版\ReadExcel\ChangeDlg.cpp"
+"E:\各类学科文件\软件项目实训\软件项目实训资料\模拟银行存储系统完成版\ReadExcel\CSpreadSheet.cpp"
+"E:\各类学科文件\软件项目实训\软件项目实训资料\模拟银行存储系统完成版\ReadExcel\GetDlg.cpp"
+"E:\各类学科文件\软件项目实训\软件项目实训资料\模拟银行存储系统完成版\ReadExcel\LoginDlg.cpp"
+"E:\各类学科文件\软件项目实训\软件项目实训资料\模拟银行存储系统完成版\ReadExcel\Public.cpp"
+"E:\各类学科文件\软件项目实训\软件项目实训资料\模拟银行存储系统完成版\ReadExcel\readexcel.cpp"
+"E:\各类学科文件\软件项目实训\软件项目实训资料\模拟银行存储系统完成版\ReadExcel\readexcelDlg.cpp"
+"E:\各类学科文件\软件项目实训\软件项目实训资料\模拟银行存储系统完成版\ReadExcel\SaveDlg.cpp"
+"E:\各类学科文件\软件项目实训\软件项目实训资料\模拟银行存储系统完成版\ReadExcel\Transfer.cpp"
+]
+Creating command line "cl.exe @"C:\Users\阳明\AppData\Local\Temp\RSPBB44.tmp"" 
+Creating temporary file "C:\Users\阳明\AppData\Local\Temp\RSPBB45.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/readexcel.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\各类学科文件\软件项目实训\软件项目实训资料\模拟银行存储系统完成版\ReadExcel\StdAfx.cpp"
+]
+Creating command line "cl.exe @"C:\Users\阳明\AppData\Local\Temp\RSPBB45.tmp"" 
+Creating temporary file "C:\Users\阳明\AppData\Local\Temp\RSPBB46.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/readexcel.pdb" /debug /machine:I386 /out:"Debug/readexcel.exe" /pdbtype:sept 
+".\Debug\ChangeDlg.obj"
+".\Debug\CSpreadSheet.obj"
+".\Debug\GetDlg.obj"
+".\Debug\LoginDlg.obj"
+".\Debug\Public.obj"
+".\Debug\readexcel.obj"
+".\Debug\readexcelDlg.obj"
+".\Debug\SaveDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Transfer.obj"
+".\Debug\readexcel.res"
+]
+Creating command line "link.exe @"C:\Users\阳明\AppData\Local\Temp\RSPBB46.tmp""
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ChangeDlg.cpp
+CSpreadSheet.cpp
+GetDlg.cpp
+LoginDlg.cpp
+Public.cpp
+readexcel.cpp
+readexcelDlg.cpp
+SaveDlg.cpp
+Transfer.cpp
+Generating Code...
+Linking...
+Creating temporary file "C:\Users\阳明\AppData\Local\Temp\RSPC70E.tmp" with contents
+[
+/nologo /o"Debug/readexcel.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\ChangeDlg.sbr"
+".\Debug\CSpreadSheet.sbr"
+".\Debug\GetDlg.sbr"
+".\Debug\LoginDlg.sbr"
+".\Debug\Public.sbr"
+".\Debug\readexcel.sbr"
+".\Debug\readexcelDlg.sbr"
+".\Debug\SaveDlg.sbr"
+".\Debug\Transfer.sbr"]
+Creating command line "bscmake.exe @"C:\Users\阳明\AppData\Local\Temp\RSPC70E.tmp""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+readexcel.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

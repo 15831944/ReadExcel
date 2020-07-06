@@ -1,0 +1,323 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\readexcel.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\readexcel.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 readexcel"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "readexcel 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2002",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_READEXCEL_DIALOG DIALOGEX 0, 0, 358, 212
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "模拟银行操作界面"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "退出",IDC_EXIT,202,170,58,23
+    PUSHBUTTON      "重新登陆",IDC_RELONIN,106,170,61,25
+    PUSHBUTTON      "存款",IDC_SAVE,301,43,50,14
+    PUSHBUTTON      "取款",IDC_GET,301,81,50,14
+    PUSHBUTTON      "查询余额",IDC_INQUIRE,301,119,50,14
+    PUSHBUTTON      "转账",IDC_TRANSFER,7,61,50,14
+    PUSHBUTTON      "修改密码",IDC_CHANGE,7,103,50,14
+END
+
+IDD_LOGIN_DLG DIALOG DISCARDABLE  0, 0, 187, 87
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "用户登录"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "登录",IDOK,33,66,50,14
+    PUSHBUTTON      "退出",IDCANCEL,103,66,50,14
+    LTEXT           "用户名：",IDC_STATIC,7,7,31,8
+    EDITTEXT        IDC_NAME,39,7,96,14,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "密码：",IDC_STATIC,7,32,23,8
+    EDITTEXT        IDC_PASS,39,32,96,14,ES_CENTER | ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    LTEXT           "（6位）",IDC_STATIC,134,36,27,8
+END
+
+IDD_SAVE_DLG DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "存款"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,33,77,50,14
+    PUSHBUTTON      "取消",IDCANCEL,103,77,50,14
+    LTEXT           "存款金额：",IDC_STATIC,18,35,38,8
+    EDITTEXT        IDC_SAVE_SUM,55,33,92,14,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "（元）",IDC_STATIC,146,36,23,8
+    LTEXT           "金额在0-----10000元",IDC_STATIC,65,50,75,8
+END
+
+IDD_GET_DLG DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "取款"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,35,77,50,14
+    PUSHBUTTON      "取消",IDCANCEL,100,77,50,14
+    LTEXT           "取款金额：",IDC_STATIC,18,35,38,8
+    EDITTEXT        IDC_GET_SUM,55,33,92,14,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "（元）",IDC_STATIC,146,36,23,8
+END
+
+IDD_TRANSFER_DLG DIALOG DISCARDABLE  0, 0, 187, 85
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "转账"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,32,64,50,14
+    PUSHBUTTON      "取消",IDCANCEL,104,64,50,14
+    LTEXT           "转账用户名：",IDC_STATIC,7,7,46,8
+    EDITTEXT        IDC_TRANSFER_ID,53,7,92,14,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "转账金额：",IDC_STATIC,7,32,38,8
+    EDITTEXT        IDC_TRANSFER_SUM,53,32,92,14,ES_CENTER | ES_AUTOHSCROLL
+END
+
+IDD_CHANGE_DLG DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "修改密码"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,32,77,50,14
+    PUSHBUTTON      "取消",IDCANCEL,104,77,50,14
+    LTEXT           "新密码：",IDC_STATIC,7,25,31,8
+    EDITTEXT        IDC_NEW_PASS,45,25,96,14,ES_CENTER | ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    LTEXT           "（6位）",IDC_STATIC,142,49,27,8
+    LTEXT           "原密码：",IDC_STATIC,7,7,31,8
+    EDITTEXT        IDC_OLD_PASS,45,7,96,14,ES_CENTER | ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    LTEXT           "确认密码：",IDC_STATIC,7,47,38,8
+    EDITTEXT        IDC_TRUE_PASS,45,47,96,14,ES_CENTER | ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    LTEXT           "（6位）",IDC_STATIC,141,26,27,8
+    LTEXT           "（6位）",IDC_STATIC,141,7,27,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "readexcel Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "readexcel\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2002\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "readexcel.EXE\0"
+            VALUE "ProductName", "readexcel 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_READEXCEL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 351
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 205
+    END
+
+    IDD_LOGIN_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_SAVE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_GET_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_TRANSFER_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 78
+    END
+
+    IDD_CHANGE_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 readexcel(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\readexcel.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
