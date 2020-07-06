@@ -1,4 +1,4 @@
-±¾³ÌÐòÊ¹ÓÃµÄ¹¤×÷²¾Îªbook1¡£
-¹¤×÷²¾book1,¹¤×÷±ísheet1°üÀ¨Èý¸ö×Ö¶Î £º
-ID¡¢SumºÍPassWord£»
-³ÌÐòÊµÏÖÁË¶ÁÈ¡IDºÍÐÞ¸ÄSum¡¢PassµÄ¹¦ÄÜ£¡
+ï»¿æœ¬ç¨‹åºä½¿ç”¨çš„å·¥ä½œç°¿ä¸ºbook1ã€‚
+å·¥ä½œç°¿book1,å·¥ä½œè¡¨sheet1åŒ…æ‹¬ä¸‰ä¸ªå­—æ®µ ï¼š
+IDã€Sumå’ŒPassWordï¼›
+ç¨‹åºå®žçŽ°äº†è¯»å–IDå’Œä¿®æ”¹Sumã€Passçš„åŠŸèƒ½ï¼
